@@ -3,4 +3,120 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: arial;
+  background-color: #c9c9c9;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  z-index: 100;
+}
+
+input, button{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  font-size: 15px;
+  height: 35px;
+  width: 250px;
+  border-style: solid;
+  border-color: rgb(102, 12, 23);
+  border-radius: 10px;
+  text-align: center;
+}
+
+button{
+  width: 100px;
+}
+
+/*HEADER*/
+header{
+  min-height: 90px;
+  background-color: rgb(91, 0, 33);
+  border-bottom: #959595 10px solid;
+  color: white;
+  /*Se agrega un espacio del inicio de la pantalla*/
+}
+
+header #branding{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*Se quita el margen al texto del branding para que no cause conflictos*/
+header #branding h1{
+  margin: auto;
+}
+
+header #logoTec{
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-top: 15px;
+
+}
+
+header #logoTec img{
+  min-height: 20%;
+
+}
+
+/*Container que muestra la imagen debajo de todos los elementos*/
+.imgContainer{
+  z-index: 1;
+  background: url("../img/itsiconoMonocromo.png") no-repeat 105% 150%;
+  background-size: 200px;
+  min-height: 320px;
+}
+
+/*CUADRO FORM DEL LOGIN*/
+.formLogin{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 250px;
+}
+
+.cuadroLogin{
+  min-height: 190px;
+  min-width: 270px;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  background-color: rgba(71, 0, 0, 0.44);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(102, 12, 23);
+}
+
+.cuadroLogin input, .cuadroLogin button{
+  margin-left: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.cuadroLogin button{
+  padding: 4px;
+}
+
+
+/*Footer*/
+footer{
+  padding: 0;
+  margin: 0;
+  min-height: 50px;
+  background-color: #340000;
+  color: white;
+  text-align: center;
+  margin-top: -20px;
+}
+
+footer p{
+  margin-top: 20px;
 }
