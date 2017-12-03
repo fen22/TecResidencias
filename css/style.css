@@ -47,6 +47,7 @@ header #branding{
   float: left;
   text-align: center;
   padding-top: 30px;
+  margin-left: 10%;
 }
 
 /*Se quita el margen al texto del branding para que no cause conflictos*/
@@ -86,6 +87,7 @@ header #logoTec img{
 .cuadroLogin{
   min-height: 190px;
   min-width: 270px;
+  max-width: 350px;
   margin: auto;
   padding: 0;
   width: 50%;
