@@ -20,7 +20,8 @@ input, button{
   font-family: arial;
   font-size: 15px;
   height: 35px;
-  width: 250px;
+  max-width: 250px;
+  min-width: 200px;
   border-style: solid;
   border-color: rgb(102, 12, 23);
   border-radius: 10px;
@@ -28,8 +29,12 @@ input, button{
 }
 
 button{
-  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  background-color: white;
 }
+
+
 
 /*HEADER*/
 header{
@@ -86,7 +91,7 @@ header #logoTec img{
 
 .cuadroLogin{
   min-height: 190px;
-  min-width: 270px;
+  min-width: 220px;
   max-width: 350px;
   margin: auto;
   padding: 0;
@@ -105,7 +110,9 @@ header #logoTec img{
 
 .cuadroLogin button{
   padding: 4px;
+  background-color: white;
 }
+
 
 
 /*Footer*/
