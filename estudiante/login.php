@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
   <head>
@@ -34,13 +33,13 @@
       <section class="container">
         <div class="formLogin">
           <h1>Inicia sesión para entrar al programa de Residencias</h1>
-          <form>
+          <form action="../scripts/validacionLogin.php " method="post" >
             <div class="cuadroLogin">
               <input class="txtField" type="text" name="numeroDeControl" placeholder="Número de Control">
               <br>
               <input class="txtField" type="password" name="password" placeholder="Contraseña">
               <br>
-              <button class="button" type="submit" name="entrar">Ingresar</button>
+              <button class="button" type="submit" name="entrarAlumno">Ingresar</button>
             </div>
           </form>
         </div>

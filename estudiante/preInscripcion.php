@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<!-- Seccion en donde se incluye el php-->
+
+<?php
+  echo "string";
+?>
+
 <html>
   <head>
     <meta charset="utf-8">
