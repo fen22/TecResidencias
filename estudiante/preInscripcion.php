@@ -1,7 +1,7 @@
-<!-- Seccion en donde se incluye el php-->
-
-<?php
-  echo "string";
+<!--Espacio para verificar la obtención de datos-->
+<?php session_start();
+  echo "Ususario: " . $_SESSION['numeroDeControl'];
+  echo "\nContraseña: " . $_SESSION['pass'];
 ?>
 
 <html>
@@ -25,22 +25,6 @@
         </div>
       </div>
     </header>
-
-    <!--empieza la sección del form-->
-    <section class="container">
-      <div class="formLogin">
-        <h1>Inicia sesión para entrar al programa de Residencias</h1>
-        <form>
-          <div class="cuadroLogin">
-            <input class="txtField" type="text" name="numeroDeControl" placeholder="Número de Control">
-            <br>
-            <input class="txtField" type="password" name="password" placeholder="Contraseña">
-            <br>
-            <button class="button" type="submit" name="entrar">Ingresar</button>
-          </div>
-        </form>
-      </div>
-    </section>
 
   </body>
 </html>

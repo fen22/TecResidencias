@@ -1,0 +1,69 @@
+/*GLOBAL*/
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  background-color: #c9c9c9;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  z-index: 100;
+}
+
+input, button{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  font-size: 15px;
+  height: 35px;
+  width: 250px;
+  border-style: solid;
+  border-color: rgb(102, 12, 23);
+  border-radius: 10px;
+  text-align: center;
+}
+
+button{
+  width: 100px;
+}
+
+/*HEADER*/
+header{
+  min-height: 90px;
+  background-color: rgb(91, 0, 33);
+  border-bottom: #959595 10px solid;
+  color: white;
+  /*Se agrega un espacio del inicio de la pantalla*/
+}
+
+header #branding{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 10%;
+}
+
+/*Se quita el margen al texto del branding para que no cause conflictos*/
+header #branding h1{
+  margin: auto;
+}
+
+header #logoTec{
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-top: 15px;
+
+}
+
+header #logoTec img{
+  min-height: 20%;
+
+}

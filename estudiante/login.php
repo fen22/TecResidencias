@@ -6,7 +6,7 @@
     <meta name="viewport" content="width = device-width">
     <meta name="description" content="Ingreso a página de residencias Tecnológico de Saltillo">
     <meta name="keywords:" content="Residencias, Tec Saltillo, Instituto Tecnológico de Saltillo, Programa de Residencias">
-    <meta name="author" content="Edgar Escobedo, Fernando Cabrera">
+    <meta name="author" content="Edgar Escobedo">
     <!--Nombre de la página-->
     <title>Residencias | Login</title>
 
