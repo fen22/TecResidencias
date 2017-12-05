@@ -1,10 +1,11 @@
 /*GLOBAL*/
-
 body{
   padding: 0;
   margin: 0;
   font-family: arial;
   background-color: #c9c9c9;
+
+  min-width: 300px;
 }
 
 .container{
@@ -75,9 +76,18 @@ header #logoTec img{
   padding: 0;
   min-width: 400px;
   max-width: 500px;
-  min-height: 500px;
+  min-height: 350px;
   background-color: blue;
   text-align: center;
+
+  /*Colores de fondo y bordes*/
+  background-color: rgba(129, 129, 129, 0.56);
+  border-color: #414141;
+  border-style: solid;
+  border-radius: 10px;
+
+  /*Separación del header*/
+  margin-top: 20px;
 }
 
 /*manipulacion de tabla*/
@@ -87,6 +97,9 @@ header #logoTec img{
 
 .tablaDeContenido{
   margin: auto;
+
+  /*Separación del borde del cuadro semitransparente*/
+  margin-top: 10px;
 }
 
 .tablaDeContenido#textarea{

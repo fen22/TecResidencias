@@ -7,8 +7,9 @@
     //de manera estática
     $_SESSION['nombre'] = "Edgar Osvaldo Escobedo Hernández";
     $_SESSION['carrera'] = 'Ingeniería en Sistemas Computacionales';
-    $_SESSION['semestre'] = 5;
+    $_SESSION['planDeEstudios'] = 'asd123adk';
     $_SESSION['email'] = 'edgaar.escobedo@gmail.com';
+    $_SESSION['domicilio'] = 'Blvd. Emilio Arizpe de la Maza #341';
 
     $usuario = $_POST["numeroDeControl"];
     $pass = $_POST["password"];

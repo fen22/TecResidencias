@@ -46,8 +46,8 @@
             </tr>
 
             <tr>
-              <td class="tdIzquierdo"><label>Semestre: </label></td>
-              <td><input class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['semestre'];?>></td>
+              <td class="tdIzquierdo"><label>Clave plan de estudios: </label></td>
+              <td><input class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['planDeEstudios'];?>></td>
             </tr>
 
             <tr>
@@ -56,8 +56,8 @@
             </tr>
 
             <tr>
-              <td class="tdIzquierdo"><label>Domicilio: </label></td>
-              <td><textarea id="textArea" name="domicilio" rows="1" cols="40"></textarea></td>
+              <td class="tdIzquierdo"><label>Domicilio Particular: </label></td>
+              <td> <input required type="text" name="domicilio" value=<?php session_start(); echo '"'; echo $_SESSION['domicilio']; echo '"'; ?>> </td>
             </tr>
           </table> <!--Termina la tabla para acomodar los labels y txtFields-->
 
@@ -68,7 +68,7 @@
             <input type="radio" name="radioSiNo" value="Si">Si
           </label>
           <label>
-            <input type="radio" name="radioSiNo" value="No">No
+            <input type="radio" name="radioSiNo" value="No" checked>No
           </label>
 
           <br>
