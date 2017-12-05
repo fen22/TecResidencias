@@ -5,7 +5,7 @@
     //Se hace la conexión con la base de datos...
     //Se recauda la información necesaria, por el momento sólo se pondrá la información
     //de manera estática
-    $_SESSION['nombre'] = 'Edgar Osvaldo Escobedo Hernández';
+    $_SESSION['nombre'] = "Edgar Osvaldo Escobedo Hernández";
     $_SESSION['carrera'] = 'Ingeniería en Sistemas Computacionales';
     $_SESSION['semestre'] = 5;
     $_SESSION['email'] = 'edgaar.escobedo@gmail.com';

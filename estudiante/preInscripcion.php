@@ -2,6 +2,9 @@
 <?php session_start();
   echo "Ususario: " . $_SESSION['numeroDeControl'];
   echo "\nContraseña: " . $_SESSION['pass'];
+  echo "\nNombre: " . $_SESSION['nombre'];
+  echo "\n-----Sesion nombre [1] : " . $_SESSION['nombre'][1];
+
 ?>
 
 <html>
@@ -33,28 +36,28 @@
 
           <table class="tablaDeContenido">
             <tr>
-              <td> <label>Número de Control: </label> </td>
+              <td class="tdIzquierdo"> <label>Número de Control: </label> </td>
               <td> <input class="txtField" readonly='read_only' type="text" name="numeroDeControl" value=<?php session_start(); echo $_SESSION['numeroDeControl']; ?>> </td>
             </tr>
 
             <tr>
-              <td><label>Nombre: </label></td>
-              <td><input class="txtField" readonly='read_only' type="text" name="nombreUsuario" value=<?php session_start(); echo $_SESSION['nombre']; ?>></td>
+              <td class="tdIzquierdo"><label>Nombre: </label></td>
+              <td><input class="txtField" readonly='read_only' type="textArea" name="nombreUsuario" value=<?php session_start(); echo '"'; echo $_SESSION['nombre']; echo '"'?>></td>
             </tr>
 
             <tr>
-              <td><label>Semestre: </label></td>
+              <td class="tdIzquierdo"><label>Semestre: </label></td>
               <td><input class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['semestre'];?>></td>
             </tr>
 
             <tr>
-              <td><label>Correo Electrónico: </label></td>
-              <td><input class="txtField" type="text" name="email" value=<?php session_start(); echo $_SESSION['email'] ?>></td>
+              <td class="tdIzquierdo"><label>Correo Electrónico: </label></td>
+              <td><input class="txtField" type="email" name="email" value=<?php session_start(); echo $_SESSION['email'] ?>></td>
             </tr>
 
             <tr>
-              <td><label>Domicilio: </label></td>
-              <td><textarea name="domicilio" rows="1" cols="40"></textarea></td>
+              <td class="tdIzquierdo"><label>Domicilio: </label></td>
+              <td><textarea id="textArea" name="domicilio" rows="1" cols="40"></textarea></td>
             </tr>
           </table> <!--Termina la tabla para acomodar los labels y txtFields-->
 

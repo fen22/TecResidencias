@@ -9,6 +9,7 @@ body{
 
 .container{
   width: 80%;
+  min-width: 400px;
   margin: auto;
   overflow: hidden;
   z-index: 100;
@@ -17,11 +18,13 @@ body{
 input, button{
   color: black;
   font-family: arial;
-  font-size: 15px;
+  font-size: 11px;
   border-style: solid;
   border-color: rgb(102, 12, 23);
   border-radius: 10px;
   text-align: center;
+  min-height: 30px;
+  min-width: 250px;
 }
 
 button{
@@ -78,3 +81,15 @@ header #logoTec img{
 }
 
 /*manipulacion de tabla*/
+.tdIzquierdo{
+  text-align: right;
+}
+
+.tablaDeContenido{
+  margin: auto;
+}
+
+.tablaDeContenido#textarea{
+  max-width: 10px;
+  min-width: 10px;
+}
