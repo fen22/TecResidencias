@@ -35,7 +35,7 @@
         <form action="../scripts/enviarPreInscripcion.php" method="post">
 
           <h2>Formulario de PreInscripción</h2>
-
+          <p>Verifica que la información sea correcta.</p>
           <table class="tablaDeContenido">
             <tr>
               <td class="tdIzquierdo"> <label>Número de Control: </label> </td>
@@ -81,10 +81,10 @@
 
           <label>¿Deseas ingresar al programa de residencias en el siguiente semestre?</label> <br>
           <label>
-            <input type="radio" name="radioSiNo" value='true'>Si
+            <input type='radio' name='radioSiNo' value='true'>Si
           </label>
           <label>
-            <input type="radio" name="radioSiNo" value='false' checked>No
+            <input type='radio' name='radioSiNo' value='false' checked>No
           </label>
 
           <br>

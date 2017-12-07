@@ -5,11 +5,16 @@
     //Todo lo que tenga que ser guardado en la base de datos...
 
     $siNo = $_POST['radioSiNo'];
-    if($siNo == 'true') {
-      header("Location: ../estudiante/login.php");
+
+    if($siNo == 'true'){
+      header ("Location: ../estudiante/login.php");
     } else {
-      echo '<script type="text/javascript> alert('Tu información será guardada para cuando decidas iniciar las residencias :)'); </script> "';
+      echo '<script>';
+      echo 'alert("Tu información solo será guardada pero no será enviada para revisión.") ;';
+      echo '</script>';
+      require('../estudiante/login.php');
     }
+
   }
 
 ?>
