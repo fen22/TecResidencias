@@ -34,6 +34,8 @@
       <div class="cuadroForm">
         <form action="../scripts/enviarPreInscripcion.php" method="post">
 
+          <h2>Formulario de PreInscripción</h2>
+
           <table class="tablaDeContenido">
             <tr>
               <td class="tdIzquierdo"> <label>Número de Control: </label> </td>
@@ -42,12 +44,17 @@
 
             <tr>
               <td class="tdIzquierdo"><label>Nombre: </label></td>
-              <td><input class="txtField" readonly='read_only' type="textArea" name="nombreUsuario" value=<?php session_start(); echo '"'; echo $_SESSION['nombre']; echo '"'?>></td>
+              <td><input class="txtField" readonly='read_only' type="textArea" name="nombreUsuario" value=<?php session_start(); echo '"'; echo $_SESSION['nombre']; echo '"';?>></td>
             </tr>
 
             <tr>
               <td class="tdIzquierdo"><label>Clave plan de estudios: </label></td>
               <td><input class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['planDeEstudios'];?>></td>
+            </tr>
+
+            <tr>
+              <td class="tdIzquierdo" > <label>Carrera: </label> </td>
+              <td> <input class="txtField" readonly='read_only' type="text" name="carrera" value=<?php session_start(); echo '"'.$_SESSION['carrera'].'"'; ?>> </td>
             </tr>
 
             <tr>
@@ -59,21 +66,30 @@
               <td class="tdIzquierdo"><label>Domicilio Particular: </label></td>
               <td> <input required type="text" name="domicilio" value=<?php session_start(); echo '"'; echo $_SESSION['domicilio']; echo '"'; ?>> </td>
             </tr>
+
+            <tr>
+              <td class="tdIzquierdo" > <label>Ciudad: </label> </td>
+              <td> <input type="text" name="ciudad" value=<?php session_start(); echo '"'.$_SESSION['ciudad'].'"'; ?> </td>
+            </tr>
+
+            <tr>
+              <td class='tdIzquierdo'> <label for=""></label> </td>
+            </tr>
           </table> <!--Termina la tabla para acomodar los labels y txtFields-->
 
           <br>
 
-          <label>Deseas ingresar al programa de residencias en el siguiente semestre?:</label> <br>
+          <label>¿Deseas ingresar al programa de residencias en el siguiente semestre?</label> <br>
           <label>
-            <input type="radio" name="radioSiNo" value="Si">Si
+            <input type="radio" name="radioSiNo" value='true'>Si
           </label>
           <label>
-            <input type="radio" name="radioSiNo" value="No" checked>No
+            <input type="radio" name="radioSiNo" value='false' checked>No
           </label>
 
           <br>
           <!--Aquí termina el form, termina con el botón de enviar-->
-          <button type="button" name="guardar">Guardar y Enviar</button>
+          <button type="submit" name="guardar">Guardar y Enviar</button>
         </form>
       </div>
     </div>

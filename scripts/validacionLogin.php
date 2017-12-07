@@ -10,6 +10,7 @@
     $_SESSION['planDeEstudios'] = 'asd123adk';
     $_SESSION['email'] = 'edgaar.escobedo@gmail.com';
     $_SESSION['domicilio'] = 'Blvd. Emilio Arizpe de la Maza #341';
+    $_SESSION['ciudad'] = 'Saltillo';
 
     $usuario = $_POST["numeroDeControl"];
     $pass = $_POST["password"];

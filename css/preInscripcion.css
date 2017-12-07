@@ -34,6 +34,7 @@ button{
 
 /*HEADER*/
 header{
+  min-width: 400px;
   min-height: 90px;
   background-color: rgb(91, 0, 33);
   border-bottom: #959595 10px solid;
@@ -74,7 +75,7 @@ header #logoTec img{
 .cuadroForm{
   margin: auto;
   padding: 0;
-  min-width: 400px;
+  min-width: 200px;
   max-width: 500px;
   min-height: 350px;
   background-color: blue;
@@ -100,6 +101,7 @@ header #logoTec img{
 
   /*Separación del borde del cuadro semitransparente*/
   margin-top: 10px;
+  min-width: 200px;
 }
 
 .tablaDeContenido#textarea{
