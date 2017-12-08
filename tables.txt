@@ -1,4 +1,4 @@
-#Tabla de documento de preinscripción
+#Tabla de documento de preinscripción                                                                                                                                                                                                                                                                                                            
 #Debe de haber solo un documento por usuario
 create table preletter(
     id integer not null,
@@ -12,6 +12,11 @@ create table preletter(
     status integer, #status: tendra valor de 1 si el alumno hara su residencia este semestre, 0 en su defecto.
     primary key(id));
 
+insert into preletter values(0,'','','','','','','',0);
+insert into preletter values(1,'123','fernando','asda12','sistemas','fer@mememail.com','por ahí','saltllo',0);
+
+select * from preletter where id=(select preletter from user where id=1);
+
 create table letter(
     id integer not null,
     control varchar(255) not null,
@@ -23,6 +28,8 @@ create table letter(
     status integer,
     primary key(id));
 
+insert into letter values(0,'','','','','','',0);
+
 create table user(
     id integer not null,
     user varchar(255) ,
@@ -30,11 +37,12 @@ create table user(
     session varchar(255) ,
     preletter integer,
     letter integer,
-    primary key(id)),
-    foreign key (preletter) references preletter(id)),
+    primary key(id),
+    foreign key (preletter) references preletter(id),
     foreign key (letter) references letter(id));
 
-insert into user values();
+insert into user values(1,'fer',md5(pass123),'1',0,0);
+update table user set letter=1 where id=1;
 
 create table admin(
     id integer not null,
@@ -48,7 +56,7 @@ create table adminmessages(
     admin integer,
     message text,
     seen integer,
-    primary key(id)),
+    primary key(id),
     foreign key (admin) references admin(id));
 
 create table usermessages(
@@ -56,6 +64,6 @@ create table usermessages(
     user integer,
     message text,
     seen integer,
-    primary key(id)),
+    primary key(id),
     foreign key (user) references user(id));
 
