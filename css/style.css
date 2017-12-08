@@ -73,6 +73,21 @@ header #logoTec img{
 
 }
 
+/*CSS DEL NOMBRE DE USUARIO Y FECHA Y HORA ACTUAL*/
+section.infoActual{
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+
+.infoActual .nombreUsuario{
+  float: left;
+}
+.infoActual .fechaYHora{
+  float: right;
+}
+
+
 /*Container que muestra la imagen debajo de todos los elementos*/
 .imgContainer{
   z-index: 1;
@@ -113,6 +128,9 @@ header #logoTec img{
   background-color: white;
 }
 
+.cuadroLogin .date{
+  text-align: center;
+}
 
 
 /*Footer*/

@@ -28,6 +28,12 @@
       </div>
     </header>
 
+    <!--Parte en donde se muestra el nombre del usuario y la hora actual-->
+    <section class="infoActual">
+      <p class="nombreUsuario">Usuario: </p>
+      <p class="fechaYHora">Fecha y hora...</p>
+    </section>
+
     <!--empieza la sección del form-->
     <div class="imgContainer">
       <section class="container">

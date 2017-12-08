@@ -39,27 +39,27 @@
           <table class="tablaDeContenido">
             <tr>
               <td class="tdIzquierdo"> <label>Número de Control: </label> </td>
-              <td> <input class="txtField" readonly='read_only' type="text" name="numeroDeControl" value=<?php session_start(); echo $_SESSION['numeroDeControl']; ?>> </td>
+              <td> <input required class="txtField" readonly='read_only' type="text" name="numeroDeControl" value=<?php session_start(); echo $_SESSION['numeroDeControl']; ?>> </td>
             </tr>
 
             <tr>
               <td class="tdIzquierdo"><label>Nombre: </label></td>
-              <td><input class="txtField" readonly='read_only' type="textArea" name="nombreUsuario" value=<?php session_start(); echo '"'; echo $_SESSION['nombre']; echo '"';?>></td>
+              <td><input required class="txtField" readonly='read_only' type="textArea" name="nombreUsuario" value=<?php session_start(); echo '"'; echo $_SESSION['nombre']; echo '"';?>></td>
             </tr>
 
             <tr>
               <td class="tdIzquierdo"><label>Clave plan de estudios: </label></td>
-              <td><input class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['planDeEstudios'];?>></td>
+              <td><input required class="txtField" readonly='read_only' type="text" name="semestre" value=<?php session_start(); echo $_SESSION['planDeEstudios'];?>></td>
             </tr>
 
             <tr>
               <td class="tdIzquierdo" > <label>Carrera: </label> </td>
-              <td> <input class="txtField" readonly='read_only' type="text" name="carrera" value=<?php session_start(); echo '"'.$_SESSION['carrera'].'"'; ?>> </td>
+              <td> <input required class="txtField" readonly='read_only' type="text" name="carrera" value=<?php session_start(); echo '"'.$_SESSION['carrera'].'"'; ?>> </td>
             </tr>
 
             <tr>
               <td class="tdIzquierdo"><label>Correo Electrónico: </label></td>
-              <td><input class="txtField" type="email" name="email" value=<?php session_start(); echo $_SESSION['email'] ?>></td>
+              <td><input required class="txtField" type="email" name="email" value=<?php session_start(); echo $_SESSION['email'] ?>></td>
             </tr>
 
             <tr>
@@ -69,11 +69,13 @@
 
             <tr>
               <td class="tdIzquierdo" > <label>Ciudad: </label> </td>
-              <td> <input type="text" name="ciudad" value=<?php session_start(); echo '"'.$_SESSION['ciudad'].'"'; ?> </td>
+              <td> <input required type="text" name="ciudad" value=<?php session_start(); echo '"'.$_SESSION['ciudad'].'"'; ?> </td>
             </tr>
 
             <tr>
-              <td class='tdIzquierdo'> <label for=""></label> </td>
+              <td class='tdIzquierdo'> <label>Fecha:</label> </td>
+              <!--Se le pone como valor por defecto la fecha actual-->
+              <td> <input class="date" required type="date" name="fecha" value="<?php echo date("Y-m-d"); ?>"> </td>
             </tr>
           </table> <!--Termina la tabla para acomodar los labels y txtFields-->
 

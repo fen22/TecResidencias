@@ -108,3 +108,7 @@ header #logoTec img{
   max-width: 10px;
   min-width: 10px;
 }
+
+.tablaDeContenido .date{
+  text-align: center;
+}
