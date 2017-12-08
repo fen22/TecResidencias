@@ -20,7 +20,7 @@
     <header>
       <div class="container">
         <div id="branding">
-          <h1>Instituto Tecnológico de Saltillo</h1>
+          <h1>Instituto Tecnológico de not Saltillo</h1>
         </div>
         <div id="logoTec">
           <img src="../img/itsicono3.png">

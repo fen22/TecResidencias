@@ -1,4 +1,5 @@
 <?php
+require 'enviorment.php'
   session_start();//Según esto esta linea tiene que ir antes de cualquier cosa
 
   if(isset($_POST["entrarAlumno"])){
