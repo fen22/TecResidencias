@@ -4,7 +4,6 @@ body{
   margin: 0;
   font-family: arial;
   background-color: #c9c9c9;
-
   min-width: 300px;
 }
 
@@ -14,6 +13,9 @@ body{
   margin: auto;
   overflow: hidden;
   z-index: 100;
+
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 input, button{
@@ -34,7 +36,9 @@ button{
 
 /*HEADER*/
 header{
-  min-width: 400px;
+  margin:0;
+  padding: 0;
+  min-width: 420px;
   min-height: 90px;
   background-color: rgb(91, 0, 33);
   border-bottom: #959595 10px solid;
@@ -71,7 +75,28 @@ header #logoTec img{
 }
 
 /*USUARIO, HORA Y FECHA*/
+.usuarioYFecha{
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  background-color: rgb(99, 99, 99);
+  text-align: center;
+  min-width: 420px;
+}
 
+.tablaUsuarioYFecha{
+  margin: auto;
+  margin-top: 13px;
+  min-width: 200px;
+}
+
+.tablaUsuarioYFecha p{
+  text-align: center;
+}
+
+.tablaUsuarioYFecha .tdEnmedio{
+  min-width: 20px;
+}
 
 /*FORM*/
 .cuadroForm{
@@ -111,5 +136,22 @@ header #logoTec img{
 }
 
 .tablaDeContenido .date{
+  text-align: center;
+}
+
+
+/*TABLA PARA CONTROLAR LOS RADIO*/
+#tableRadio{
+  text-align: center;
+}
+
+#tableRadio input, #tableRadio label{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#tableRadio td{
   text-align: center;
 }

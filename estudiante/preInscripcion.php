@@ -1,4 +1,32 @@
 <html>
+
+  <!--Script para el reloj-->
+  <script type="text/javascript">
+    function startTime(){
+      today=new Date();
+      month=today.getMonth();
+      year=today.getFullYear();
+      day=today.getDate();
+      h=today.getHours();
+      m=today.getMinutes();
+      s=today.getSeconds();
+      m=checkTime(m);
+      s=checkTime(s);
+      document.getElementById('reloj').innerHTML=year+"/"+month+"/"+day+" | "+ h+":"+m+":"+s;
+      t=setTimeout('startTime()',500);}
+
+    function checkTime(i) {
+      if (i<10) {
+        i="0" + i;
+      }
+      return i;
+    }
+
+    window.onload=function(){
+      startTime();
+    }
+  </script>
+
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Edgar Escobedo">
@@ -6,6 +34,7 @@
     <link rel="stylesheet" href="../css/preInscripcion.css">
     <title>Residencias | Preinscripción</title>
   </head>
+
   <body>
 
     <!--Franja en donde aparece el nombre y el logo del tec-->
@@ -21,11 +50,17 @@
     </header>
 
     <!--En esta parte se verá el nombre del usuario así como la fecha del sistema-->
-
     <div class="usuarioYFecha">
-      <h1>Hola</h1>
+      <div class="container" id="containerTabla">
+        <table class='tablaUsuarioYFecha'>
+          <tr>
+            <td class="tdIzquierdo"><p><?php session_start(); echo $_SESSION['nombre']; ?> </p> </td>
+            <td class="tdEnmedio"><p></p> </td>
+            <td><p id="reloj"></p> </td>
+          </tr>
+        </table>
+      </div>
     </div>
-
 
     <!--Empieza el form para poder ser llenado-->
     <div class="container"><!--Se pone en container para que vaya centrado-->
@@ -80,12 +115,20 @@
           <br>
 
           <label>¿Deseas ingresar al programa de residencias en el siguiente semestre?</label> <br>
-          <label>
-            <input type='radio' name='radioSiNo' value='true'>Si
-          </label>
-          <label>
-            <input type='radio' name='radioSiNo' value='false' checked>No
-          </label>
+          <table id="tableRadio">
+            <tr>
+              <td>
+                <input type="radio" name="radioSiNo" value='true'>
+                <label>Si</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" name="radioSiNo" value="false">
+                <label>No</label>
+              </td>
+            </tr>
+          </table>
 
           <br>
           <!--Aquí termina el form, termina con el botón de enviar-->
