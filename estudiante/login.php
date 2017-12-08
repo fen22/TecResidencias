@@ -35,7 +35,7 @@
           <h1>Inicia sesión para entrar al programa de Residencias</h1>
           <form action="../scripts/validacionLogin.php " method="post" >
             <div class="cuadroLogin">
-              <input class="txtField" type="text" name="numeroDeControl" placeholder="Número de Control">
+              <input class="txtField" type="text" name="user" placeholder="Número de Control">
               <br>
               <input class="txtField" type="password" name="password" placeholder="Contraseña">
               <br>
