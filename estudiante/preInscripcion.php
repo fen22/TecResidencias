@@ -1,12 +1,3 @@
-<!--Espacio para verificar la obtención de datos-->
-<?php session_start();
-  echo "Ususario: " . $_SESSION['numeroDeControl'];
-  echo "\nContraseña: " . $_SESSION['pass'];
-  echo "\nNombre: " . $_SESSION['nombre'];
-  echo "\n-----Sesion nombre [1] : " . $_SESSION['nombre'][1];
-
-?>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -28,6 +19,13 @@
         </div>
       </div>
     </header>
+
+    <!--En esta parte se verá el nombre del usuario así como la fecha del sistema-->
+
+    <div class="usuarioYFecha">
+      <h1>Hola</h1>
+    </div>
+
 
     <!--Empieza el form para poder ser llenado-->
     <div class="container"><!--Se pone en container para que vaya centrado-->

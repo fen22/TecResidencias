@@ -70,6 +70,8 @@ header #logoTec img{
 
 }
 
+/*USUARIO, HORA Y FECHA*/
+
 
 /*FORM*/
 .cuadroForm{
@@ -78,12 +80,11 @@ header #logoTec img{
   min-width: 200px;
   max-width: 500px;
   min-height: 350px;
-  background-color: blue;
   text-align: center;
 
   /*Colores de fondo y bordes*/
-  background-color: rgba(129, 129, 129, 0.56);
-  border-color: #414141;
+  background-color: rgba(71, 0, 0, 0.66);
+  border-color: rgb(102, 12, 23);
   border-style: solid;
   border-radius: 10px;
 

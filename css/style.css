@@ -74,17 +74,10 @@ header #logoTec img{
 }
 
 /*CSS DEL NOMBRE DE USUARIO Y FECHA Y HORA ACTUAL*/
-section.infoActual{
-  margin: 0;
-  padding: 0;
+.usuarioYFecha{
+  margin-top: 50px;
+  height: 800px;
   background-color: blue;
-}
-
-.infoActual .nombreUsuario{
-  float: left;
-}
-.infoActual .fechaYHora{
-  float: right;
 }
 
 
