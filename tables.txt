@@ -1,0 +1,61 @@
+#Tabla de documento de preinscripción
+#Debe de haber solo un documento por usuario
+create table preletter(
+    id integer not null,
+    control varchar(255) not null, #matricula de alumno
+    name varchar(255),
+    plankey varchar(255), #clave de plan de estudios
+    job varchar(255),
+    email varchar(255),
+    address varchar(255),
+    city varchar(255),
+    status integer, #status: tendra valor de 1 si el alumno hara su residencia este semestre, 0 en su defecto.
+    primary key(id));
+
+create table letter(
+    id integer not null,
+    control varchar(255) not null,
+    name varchar(255),
+    job varchar(255),
+    email varchar(255),
+    address varchar(255),
+    city varchar(255),
+    status integer,
+    primary key(id));
+
+create table user(
+    id integer not null,
+    user varchar(255) ,
+    pass varchar(255) ,
+    session varchar(255) ,
+    preletter integer,
+    letter integer,
+    primary key(id)),
+    foreign key (preletter) references preletter(id)),
+    foreign key (letter) references letter(id));
+
+insert into user values();
+
+create table admin(
+    id integer not null,
+    user varchar(255) ,
+    pass varchar(255) ,
+    session varchar(255) ,
+    primary key(id));
+
+create table adminmessages(
+    id integer not null,
+    admin integer,
+    message text,
+    seen integer,
+    primary key(id)),
+    foreign key (admin) references admin(id));
+
+create table usermessages(
+    id integer not null,
+    user integer,
+    message text,
+    seen integer,
+    primary key(id)),
+    foreign key (user) references user(id));
+
