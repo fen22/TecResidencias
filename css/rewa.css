@@ -1,0 +1,134 @@
+/*GLOBAL*/
+body{
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  background-color: #c9c9c9;
+  min-width: 300px;
+}
+
+.container{
+  width: 80%;
+  min-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 100;
+}
+
+input, button{
+  color: black;
+  font-family: arial;
+  font-size: 11px;
+  border-style: solid;
+  border-color: rgb(102, 12, 23);
+  border-radius: 10px;
+  text-align: center;
+  min-height: 30px;
+  min-width: 250px;
+}
+
+button{
+  width: 100px;
+}
+
+/*HEADER*/
+header{
+  margin:0;
+  padding: 0;
+  min-width: 426px;
+  min-height: 90px;
+  background-color: rgb(91, 0, 33);
+  border-bottom: #959595 10px solid;
+  color: white;
+  /*Se agrega un espacio del inicio de la pantalla*/
+}
+
+header #branding{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 10%;
+}
+
+/*Se quita el margen al texto del branding para que no cause conflictos*/
+header #branding h1{
+  margin: auto;
+}
+
+header #logoTec{
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-top: 15px;
+
+}
+
+header #logoTec img{
+  min-height: 20%;
+
+}
+
+/*USUARIO, HORA Y FECHA*/
+.usuarioYFecha{
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  background-color: rgb(99, 99, 99);
+  text-align: center;
+  min-width: 426px;
+}
+
+.tablaUsuarioYFecha{
+  margin: auto;
+  margin-top: 5px;
+  min-width: 200px;
+}
+
+.tablaUsuarioYFecha p{
+  text-align: center;
+}
+
+.tablaUsuarioYFecha .tdEnmedio{
+  min-width: 20px;
+}
+
+
+/*SECCIONES GUINDA*/
+.seccionGuinda{
+  margin:auto;
+  margin-top: 20px;
+  min-width: 420px;
+  background-color: rgb(98, 38, 60);
+  text-align: center;
+  color: white;
+
+  /*Parte para hacer el recuadro*/
+  width: 90%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.seccionGuinda .box{
+  width: 20%;
+  min-width: 120px;
+  margin: auto;
+  margin-top: 15px;
+  float: left;
+  /*margin-left: 13%;*/
+}
+
+.seccionGuinda .container{
+  text-align: center;
+}
+
+#primerBox{
+  /*margin-left: 9%;*/
+}
+
+.seccionGuinda img{
+  max-height: 50px;
+}

@@ -7,12 +7,16 @@
     $siNo = $_POST['radioSiNo'];
 
     if($siNo == 'true'){
-      header ("Location: ../estudiante/login.php");
+      echo '<script>'.
+        'alert("Tu información ha sido guardada y enviada a revisión"); '.
+        'location.href = "../estudiante/rewa.php"; '.
+        '</script>';
+
     } else {
       echo '<script>';
       echo 'alert("Tu información solo será guardada pero no será enviada para revisión.") ;';
+      echo 'location.href = "../estudiante/login.php";';
       echo '</script>';
-      require('../estudiante/login.php');
     }
 
   }
