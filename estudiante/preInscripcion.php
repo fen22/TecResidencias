@@ -4,7 +4,7 @@
   <script type="text/javascript">
     function startTime(){
       today=new Date();
-      month=today.getMonth();
+      month=today.getMonth()+1;
       year=today.getFullYear();
       day=today.getDate();
       h=today.getHours();
@@ -12,7 +12,7 @@
       s=today.getSeconds();
       m=checkTime(m);
       s=checkTime(s);
-      document.getElementById('reloj').innerHTML=year+"/"+month+"/"+day+" | "+ h+":"+m+":"+s;
+      document.getElementById('reloj').innerHTML=day+"/"+month+"/"+year+" | "+ h+":"+m+":"+s;
       t=setTimeout('startTime()',500);}
 
     function checkTime(i) {
@@ -114,28 +114,23 @@
 
           <br>
 
-          <label>¿Deseas ingresar al programa de residencias en el siguiente semestre?</label> <br>
-          <table id="tableRadio">
-            <tr>
-              <td>
-                <input type="radio" name="radioSiNo" value='true'>
-                <label>Si</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="radio" name="radioSiNo" value="false">
-                <label>No</label>
-              </td>
-            </tr>
-          </table>
-
-          <br>
+          <div class="radios">
+            <label>¿Deseas ingresar al programa de residencias en el siguiente semestre?</label> <br><br>
+            <input type="radio" name="radioSiNo" value='true'><label>Si</label> <br>
+            <input type="radio" name="radioSiNo" value='false' checked><label>No</label> <br>
+          </div>
           <!--Aquí termina el form, termina con el botón de enviar-->
           <button type="submit" name="guardar">Guardar y Enviar</button>
         </form>
       </div>
     </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <p>INSTITUTO TECNOLÓGICO DE SALTILLO &copy; | 2017</p>
+      </div>
+    </footer>
 
   </body>
 </html>

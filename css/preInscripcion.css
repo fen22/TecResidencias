@@ -115,6 +115,8 @@ header #logoTec img{
 
   /*Separación del header*/
   margin-top: 20px;
+  /*Separación del footer*/
+  margin-bottom: 20px;
 }
 
 /*manipulacion de tabla*/
@@ -127,6 +129,7 @@ header #logoTec img{
 
   /*Separación del borde del cuadro semitransparente*/
   margin-top: 10px;
+
   min-width: 200px;
 }
 
@@ -139,19 +142,17 @@ header #logoTec img{
   text-align: center;
 }
 
-
-/*TABLA PARA CONTROLAR LOS RADIO*/
-#tableRadio{
-  text-align: center;
-}
-
-#tableRadio input, #tableRadio label{
-  margin: 0;
+/*Footer*/
+footer{
   padding: 0;
+  margin: 0;
+  min-height: 50px;
+  background-color: #340000;
+  color: white;
+  text-align: center;
+  min-width: 420px;
 }
 
-
-
-#tableRadio td{
-  text-align: center;
+footer p{
+  margin-top: 20px;
 }

@@ -108,6 +108,9 @@ header #logoTec img{
   border-radius: 15px;
   border-style: solid;
   border-color: rgb(102, 12, 23);
+
+  /*Para separar al cuadro del footer en modo responsive*/
+  margin-bottom: 25px;
 }
 
 .cuadroLogin input, .cuadroLogin button{
