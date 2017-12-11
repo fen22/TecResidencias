@@ -106,8 +106,8 @@
       </div>
       <div class="container" id="container2">
         <div class="links">
-          <h3><a href="#">Características y Requerimientos para la Residencia</a> </h3>
-          <h3><a href="#">Formulario para Carta Compromiso</a> </h3>
+          <h3><a href="info.html">Características y Requerimientos para la Residencia</a> </h3>
+          <h3><a href="letterForm.php">Formulario para Carta Compromiso</a> </h3>
           <!--Aquí se pone la condicional de si se puede o no liberar el PDF-->
           <?php session_start();
             $x = true;
@@ -123,6 +123,7 @@
         </div>
       </div>
     </div>
+
 
     <!--Footer-->
     <footer>
