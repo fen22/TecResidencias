@@ -4,7 +4,7 @@ body{
   margin: 0;
   font-family: arial;
   background-color: #c9c9c9;
-  min-width: 300px;
+  min-width: 426px;
 }
 
 .container{
@@ -15,6 +15,7 @@ body{
   z-index: 100;
 }
 
+/*
 input, button{
   color: black;
   font-family: arial;
@@ -30,6 +31,7 @@ input, button{
 button{
   width: 100px;
 }
+*/
 
 /*HEADER*/
 header{
@@ -125,10 +127,58 @@ header #logoTec img{
   text-align: center;
 }
 
-#primerBox{
-  /*margin-left: 9%;*/
-}
-
 .seccionGuinda img{
   max-height: 50px;
+}
+
+.links{
+  text-align: left;
+}
+
+.links a{
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+/*ARCHIVO ADJUNTO*/
+.adjuntarArchivo{
+  margin:0;
+  padding: 0;
+  min-width: 400px;
+  text-align: left;
+  display: inline;
+}
+
+.adjuntarArchivo p{
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.adjuntarArchivo input, .adjuntarArchivo button{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-width: 30px;
+}
+
+.adjuntarArchivo input{
+  margin-left: 0;
+}
+
+/*Footer*/
+footer{
+  padding: 0;
+  margin: 0;
+  min-height: 50px;
+  background-color: #340000;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p{
+  margin-top: 20px;
 }
