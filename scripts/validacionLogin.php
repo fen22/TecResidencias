@@ -11,32 +11,32 @@ if(mysqli_connect_error()){
     //Se hace la conexión con la base de datos...
     //Se recauda la información necesaria, por el momento sólo se pondrá la información
     //de manera estátic
-    $_SESSION['nombre'] = "Edgar Osvaldo Escobedo Hernández";
-    $usuario ="select * from user where user='".mysqli_real_escape_string($link,$_POST['user'])."'";
+
+    $usuario ="select * from users where control_number='".mysqli_real_escape_string($link,$_POST['user'])."'";
+
     if($result=mysqli_query($link,$usuario)){
-	    print_r(mysqli_fetch_array($result)['id']);
+	    $pass=mysqli_fetch_array($result)['pass'];
+	    echo $pass;
+		echo "<br>";
+	    echo md5($_POST['password']);
+		echo "<br>";
+	    if($pass  == md5($_POST['password'])){
+		 //   echo "Contraseña correcta C:";
+		    header("Location: ../estudiante/preInscripcion.php");
+	    }
+	    else{
+		  //  echo "Usuario o contraseña incorrecta";
+		    header("Location: ../estudiante/login.php");
+	    }
     }
     else{
-	    echo "<p>usuaro o contraseña incorrecta</p>";
-	    echo $usuario;
+	    echo "Usuario o contraseña incorrecta1";
     }
 
-    $pass = $_POST["password"];
-
-    $_SESSION['numeroDeControl'] = $usuario;
-    $_SESSION['pass'] = $pass;
-    //header("Location: ../estudiante/preInscripcion.php");
 
   } else if(isset($_POST['entrarAdmin'])){
     //Se guardan los datos en un session para que puedan ser accedidos más tarde
-    $ususario = $_POST['idUsuario'];
-    $pass = $_POST['pass'];
-
-    $_SESSION['idUsuario'] = $usuario;
-    $_SESSION['pass'] = $pass;
-
     //Se redirecciona a donde se encuentra el control de administrador
     //header...
-  }
-
+  } 
 ?>

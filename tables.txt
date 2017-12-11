@@ -1,4 +1,4 @@
-#Tabla de documento de preinscripción                                                                                                                                                                                                                                                                                                            
+#Tabla de documento de preinscripción
 #Debe de haber solo un documento por usuario
 create table preletter(
     id integer not null,
