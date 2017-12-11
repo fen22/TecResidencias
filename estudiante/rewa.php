@@ -67,7 +67,7 @@
 
     <!--Sección en donde se puede ver el proceso de residencias-->
     <div class="seccionGuinda">
-      <div class="container">
+      <div class="container" id="container1">
         <div class="box" id="primerBox">
           <div class="imgInBox">
             <!--Con este pedazo de código se puede validar la imagen que se quiera mostrar-->
@@ -104,7 +104,32 @@
           <p>Estado 5</p>
         </div>
       </div>
+      <div class="container" id="container2">
+        <div class="links">
+          <h3><a href="#">Características y Requerimientos para la Residencia</a> </h3>
+          <h3><a href="#">Formulario para Carta Compromiso</a> </h3>
+          <!--Aquí se pone la condicional de si se puede o no liberar el PDF-->
+          <?php session_start();
+            $x = true;
+            if($x){
+              echo "<h3><a href=#>Generar carta compromiso</a></h3> ";
+            }
+          ?>
+        </div>
+        <div class="adjuntarArchivo">
+          <p>Adjuntar archivo de proyecto:</p>
+          <input type="file" name="archivoDeProyecto" value="">
+          <button type="submit" name="button">Enviar Archivo</button>
+        </div>
+      </div>
     </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <p>INSTITUTO TECNOLÓGICO DE SALTILLO &copy; | 2017</p>
+      </div>
+    </footer>
 
   </body>
 </html>
