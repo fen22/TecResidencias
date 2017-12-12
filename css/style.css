@@ -95,9 +95,7 @@ header #logoTec img{
   margin-top: 7%;
   background: url("../img/itsiconoMonocromo.png") no-repeat 105% 100%;
   background-size: 200px;
-  min-height: 320px;
-
-  margin-bottom: 50px;
+  min-height: 10px;
 }
 
 /*CUADRO FORM DEL LOGIN*/
@@ -121,7 +119,6 @@ header #logoTec img{
   border-color: rgb(102, 12, 23);
 
   /*Para separar al cuadro del footer en modo responsive*/
-  margin-bottom: 25px;
 }
 
 .cuadroLogin input, .cuadroLogin button{
@@ -144,14 +141,11 @@ header #logoTec img{
 footer{
   position: absolute;
   width: 100%;
-  bottom: 0;
-  padding: 0;
-  margin: 0;
+  bottom: 0px;
   min-height: 50px;
   background-color: #340000;
   color: white;
   text-align: center;
-  margin-top: 50px;
 }
 
 footer p{
