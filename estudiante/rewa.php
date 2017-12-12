@@ -2,7 +2,9 @@
 <html>
 
 <!--Script para el reloj-->
+
 <script type="text/javascript">
+
   function startTime(){
     today=new Date();
     month=today.getMonth()+1;
@@ -113,7 +115,7 @@
           <?php session_start();
             $x = true;
             if($x){
-              echo "<h3><a href=#>Generar carta compromiso</a></h3> ";
+              echo "<h3><a href='../scripts/generarcarta.php'>Generar carta compromiso</a></h3> ";
             }
           ?>
         </div>

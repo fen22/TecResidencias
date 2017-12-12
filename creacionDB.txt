@@ -9,6 +9,7 @@ create table users(
 );
 
  insert into users values('14050660',md5('pass123'),'fer','cabrera','???',123);
+ insert into users values('15051025', md5('15051025'), 'daniel', 'ramirez', '???', 123);
 
 create table preletter(
   plan_key varchar(255) not null,
