@@ -9,11 +9,7 @@ create table users(
 );
 
  insert into users values('14050660',md5('pass123'),'fer','cabrera','???',123);
-<<<<<<< HEAD
 insert into users values('15050946', md5('(97ech97)'), 'Edgar Osvaldo', null, 1));
-=======
- insert into users values('15051025', md5('15051025'), 'daniel', 'ramirez', '???', 123);
->>>>>>> b2b9bcd99873ee0a2b429bbfbb2036f635144a12
 
 create table preletter(
   plan_key varchar(255) not null,
