@@ -10,6 +10,7 @@
     <!--Nombre de la página-->
     <title>Residencias | Login</title>
 
+    <link rel="shortcut icon" href="../img/itsicono3.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
   </head>
 

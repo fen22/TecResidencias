@@ -32,6 +32,7 @@
     <meta name="author" content="Edgar Escobedo">
     <meta name="viewport" content="width = device-width">
     <link rel="stylesheet" href="../css/preInscripcion.css">
+    <link rel="shortcut icon" href="../img/itsicono3.png" type="image/x-icon">
     <title>Residencias | Preinscripción</title>
   </head>
 

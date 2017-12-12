@@ -36,6 +36,7 @@
     <meta name="keywords:" content="Residencias, Tec Saltillo, Instituto Tecnológico de Saltillo, Programa de Residencias">
     <meta name="author" content="Edgar Escobedo">
     <link rel="stylesheet" href="../css/rewa.css">
+    <link rel="shortcut icon" href="../img/itsicono3.png" type="image/x-icon">
     <title>Estado de Residencia | <?php session_start(); echo $_SESSION['numeroDeControl']; ?></title>
   </head>
   <body>
