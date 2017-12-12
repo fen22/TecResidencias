@@ -1,8 +1,9 @@
 <?php
 require 'enviorment.php';
   session_start();//Según esto esta linea tiene que ir antes de cualquier cosa
-
+echo "aqui tambien jala";
 $link=mysqli_connect($host,$user,$pass,$db);
+echo "aqui tambien jala";
 if(mysqli_connect_error()){
 
 	die("No se pudo conectar a la base de datos");
