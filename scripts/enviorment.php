@@ -1,7 +1,7 @@
 <?php
 $host='localhost';
 $user='root';
-$pass='cisco';
-$db='tec';
+$pass='fernini5';
+$db='test';
 $port='3306';
 ?>
