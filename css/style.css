@@ -12,6 +12,12 @@ body{
   margin: auto;
   overflow: hidden;
   z-index: 100;
+  text-align: center;
+}
+
+#h1{
+  font-size: 25px;
+  margin-top: 50px;
 }
 
 input, button{
@@ -83,10 +89,15 @@ header #logoTec img{
 
 /*Container que muestra la imagen debajo de todos los elementos*/
 .imgContainer{
-  z-index: 1;
-  background: url("../img/itsiconoMonocromo.png") no-repeat 105% 150%;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  margin-top: 7%;
+  background: url("../img/itsiconoMonocromo.png") no-repeat 105% 100%;
   background-size: 200px;
   min-height: 320px;
+
+  margin-bottom: 50px;
 }
 
 /*CUADRO FORM DEL LOGIN*/
@@ -131,13 +142,16 @@ header #logoTec img{
 
 /*Footer*/
 footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   padding: 0;
   margin: 0;
   min-height: 50px;
   background-color: #340000;
   color: white;
   text-align: center;
-  margin-top: -20px;
+  margin-top: 50px;
 }
 
 footer p{
