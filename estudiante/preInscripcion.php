@@ -1,3 +1,18 @@
+<?php
+  require 'enviorment.php';
+  session_start();//Según esto esta linea tiene que ir antes de cualquier cosa
+
+  $link=mysqli_connect($host,$user,$pass,$db);
+  if(mysqli_connect_error()){
+
+    echo '<script>'.
+      'alert("No se pudo conectar con la base de datos"); '.
+      'location.href = "../estudiante/login.php"; '.
+      '</script>';
+
+  }
+    $usuario = "select * from users where control_number='".mysqli_real_escape_string($link,$_SESSION['numeroDeControl'])."'";
+?>
 <html>
 
   <!--Script para el reloj-->
