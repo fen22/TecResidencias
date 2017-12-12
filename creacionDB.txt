@@ -9,6 +9,7 @@ create table users(
 );
 
  insert into users values('14050660',md5('pass123'),'fer','cabrera','???',123);
+insert into users values('15050946', md5('(97ech97)'), 'Edgar Osvaldo', null, 1));
 
 create table preletter(
   plan_key varchar(255) not null,
@@ -22,6 +23,7 @@ create table preletter(
 );
 
 insert into preletter values('jk212','sistemas',null,'Colonia falsa #123','saltillo',null,'14050660');
+insert into preletter values('ISIC 2010 - 224', 'Ingeniería en Sistemas Computacionales', 'edgaar.escobedo@gmail.com', 'Blvd. Emilio Arizpe #341', 'Saltillo', 0, '15050946');
 
 create table letter(
   control_number varchar(255) not null,

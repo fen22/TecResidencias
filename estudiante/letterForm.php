@@ -1,3 +1,22 @@
+<?php
+  session_start();
+
+  require '../scripts/enviorment.php';
+
+  //$link = mysql_connect($host, $user, $pass) or die("mysql_error()");
+  //mysql_select_database($db, $link) or die("mysql_error()");
+
+  $conn = new mysqli($host, $user, $pass, $db);
+
+  if($conn -> connect_error){
+    die('Connection Failed: ' . $conn -> connect_error);
+  }
+
+  //Se hace el query para imprimir el numero de Control
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
